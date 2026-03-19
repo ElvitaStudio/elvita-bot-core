@@ -1,23 +1,19 @@
 import asyncio
 import os
 from dotenv import load_dotenv
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters import CommandStart
+from aiogram import Bot, Dispatcher
+from app.handlers.user import router as user_router
 
-# Загружаем переменные из .env
 load_dotenv()
 
 async def main():
-    # Инициализация бота и диспетчера
     bot = Bot(token=os.getenv('TOKEN'))
     dp = Dispatcher()
 
-    # Простейший хэндлер прямо тут (позже вынесем в папку handlers)
-    @dp.message(CommandStart())
-    async def cmd_start(message: types.Message):
-        await message.answer(f"Привет! Это официальный бот Elvita Studio. 🚀\nЧем я могу помочь?")
+    # Подключаем наши обработчики (хэндлеры)
+    dp.include_router(user_router)
 
-    print("Бот запущен и готов к работе...")
+    print("Бот запущен корректно (модульная структура)...")
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
