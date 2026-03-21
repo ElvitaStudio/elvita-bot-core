@@ -51,12 +51,12 @@ async def portfolio_details(callback: types.CallbackQuery):
     
     # Сюда вставляй свои ссылки
     links = {
-        'crypto': 'https://t.me/your_crypto_bot',
-        'olx': 'https://t.me/your_olx_bot',
-        'work': 'https://t.me/your_work_bot',
-        'fuel': 'https://t.me/your_fuel_bot',
-        'nodeshop': 'https://t.me/your_node_shop',
-        'beauty': 'https://your-site.com'
+        'crypto': 'https://t.me/mybodt',
+        'olx': 'https://t.me/dnepr_rent_test',
+        'work': 'https://t.me/workua_jobs_Ukraine',
+        'fuel': 'https://t.me/Aishop2_bot',
+        'nodeshop': 'https://t.me/UX_Shop_Bot',
+        'beauty': 'https://t.me/feybeauty_bot'
     }
 
     # Тексты описаний
