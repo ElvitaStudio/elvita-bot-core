@@ -30,8 +30,8 @@ portfolio = InlineKeyboardMarkup(inline_keyboard=[
         InlineKeyboardButton(text='💇 Салон (Next.js)', callback_data='port_beauty')
     ],
     [
-        InlineKeyboardButton(text='📄 Лендинги (In dev)', callback_data='port_dev'),
-        InlineKeyboardButton(text='🌐 Сайты (In dev)', callback_data='port_dev')
+        InlineKeyboardButton(text='📄 Лендинги', callback_data='port_dev'),
+        InlineKeyboardButton(text='🌐 Сайты', callback_data='port_dev')
     ],
     [InlineKeyboardButton(text='🔗 Весь код на GitHub Студии', url='https://github.com/ElvitaStudio')]
 ])

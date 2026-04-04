@@ -38,8 +38,8 @@ async def about_us(message: types.Message):
 async def our_website(message: types.Message):
     await message.answer(
         "🌐 **Наш официальный сайт**\n\n"
-        "Там вы можете более подробно ознакомиться с нашими кейсами, узнать о нашей команде и подходе к работе.\n\n"
-        "🔗 **[ССЫЛКА БУДЕТ ЗДЕСЬ]**"
+        "Там вы можете более подробно ознакомиться с нашими кейсами, узнать о нашей команде и услугах.\n"
+        "🔗 **https://botapps.pro**"
     )
 
 # --- РАЗДЕЛ УСЛУГИ (ПОДРОБНО) ---
@@ -82,7 +82,8 @@ async def portfolio_details(callback: types.CallbackQuery):
         'work': 'https://t.me/workua_jobs_Ukraine',
         'fuel': 'https://t.me/Aishop2_bot',
         'nodeshop': 'https://t.me/UX_Shop_Bot',
-        'beauty': 'https://t.me/feybeauty_bot'
+        'beauty': 'https://t.me/feybeauty_bot',
+        'landings': 'https://telebots.pro'
     }
 
     descriptions = {
@@ -92,7 +93,10 @@ async def portfolio_details(callback: types.CallbackQuery):
         'fuel': "⛽ **Магазин талонов с AI**\n\n● GPT-консультант для клиентов.\n● Продажа талонов WOG/OKKO.\n● Прием оплат Mono/Crypto.",
         'nodeshop': "🛍️ **Mini App Shop**\n\n● Магазин на Node.js + React.\n● Корзина и оплата внутри Telegram.",
         'beauty': "💇 **Booking System**\n\n● Запись в салон на Next.js.\n● Календарь окон и напоминания.\n● Стек: PostgreSQL, Prisma.",
-        'dev': "🛠 **В разработке**\n\nПроект на стадии полировки. Скоро здесь будет описание!"
+        'landings': "📄 **Профессиональные лендинги**\n\n"
+                "Разрабатываем современные, быстрые и адаптивные посадочные страницы. "
+                "Идеальное решение для презентации ваших услуг или запуска рекламы.\n\n"
+                "🔥 **Наш новый проект:** Telebots.pro",
     }
 
     text = descriptions.get(project, "Описание скоро будет.")
